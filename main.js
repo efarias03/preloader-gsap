@@ -1,4 +1,3 @@
-import imagesLoaded from "imagesloaded";
 
 const content = document.querySelector("section");
 

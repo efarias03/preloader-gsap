@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/main.scss">
+  <title>Vite App</title>
+</head>
+
+<body>
+
+
+  <div class="loader">
+    <div class="blinder-container">
+      <div class="blinder"></div>
+      <div class="blinder"></div>
+      <div class="blinder"></div>
+      <div class="blinder"></div>
+      <div class="blinder"></div>
+    </div>
+
+
+    <svg width="115" height="115" viewBox="0 0 115 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+      <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+
+      <mask id="mask0_2_10" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="115" height="115">
+        <circle cx="57.5" cy="57.5" r="57.5" fill="white" />
+      </mask>
+      <g mask="url(#mask0_2_10)" filter="url(#goo)">
+        <circle cx="57.5" cy="57.5" r="54.5" stroke="white" stroke-width="6" />
+        <path class="drip-loader"
+          d="M58.3592 -13.5116C57.9715 -14.1628 57.0285 -14.1628 56.6408 -13.5116L47.208 2.33132C44.6069 4.95217 43 8.56105 43 12.5453C43 20.5534 49.4919 27.0453 57.5 27.0453C65.5081 27.0453 72 20.5534 72 12.5453C72 8.56105 70.3931 4.95217 67.792 2.33132L58.3592 -13.5116Z"
+          fill="white" />
+        <circle cx="57.5" cy="-25.5" r="57.5" fill="white" />
+      </g>
+    </svg>
+  </div>
+
+
+  <section>
+    <div class="mask">
+      <h1>So Snazzy.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, porro.</p>
+    </div>
+  </section>
+
+  <img src="assets/close-de-uma-tartaruga-marinha-verde-nadando-embaixo-d-agua-sob-as-luzes_181624-25236.avif" alt="picture" style="display: none;">
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
